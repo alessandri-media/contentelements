@@ -1,0 +1,65 @@
+tt_content.gridelements_pi1.20.10.setup {
+
+    //  100%
+    col-100 < lib.gridelements.defaultGridSetup
+    col-100 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/100.html
+        }
+    }
+
+    //  50% - 50%
+    col-50-50 < lib.gridelements.defaultGridSetup
+    col-50-50 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/50-50.html
+        }
+    }
+
+    //  33% - 33% - 33%
+    col-33-33-33 < lib.gridelements.defaultGridSetup
+    col-33-33-33 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/33-33-33.html
+        }
+    }
+
+    //  33% - 66%
+    col-33-66 < lib.gridelements.defaultGridSetup
+    col-33-66 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/33-66.html
+        }
+    }
+
+    //  66% - 33%
+    col-66-33 < lib.gridelements.defaultGridSetup
+    col-66-33 {
+         cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/66-33.html
+        }
+    }
+
+    //  75% - 25%
+    col-75-25 < lib.gridelements.defaultGridSetup
+    col-75-25 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/75-25.html
+        }
+    }
+
+    //  25% - 75%
+    col-25-75 < lib.gridelements.defaultGridSetup
+    col-25-75 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/25-75.html
+        }
+    }
+}

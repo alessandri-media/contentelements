@@ -1,0 +1,179 @@
+tx_gridelements.overruleRecords = 1
+tx_gridelements.setup {
+
+    col-100 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-100.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-100.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        100 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.main
+                            colPos = 100
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    col-50-50 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-50-50.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-50-50.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+     col-33-33-33 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-33-33-33.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-33-33-33.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 3
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        100 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.main
+                            colPos = 100
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    col-33-66 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-33-66.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-33-66.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    col-66-33 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-66-33.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-66-33.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    col-25-75 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-25-75.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-25-75.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    col-75-26 {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-75-25.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:col-75-25.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 2
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        101 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.left
+                            colPos = 101
+                        }
+
+                        102 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content.right
+                            colPos = 102
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+		 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+
+	<f:layout name="Content"/>
+
+	<f:section name="Main">
+		<div class="card shadow-sm">
+			<f:if condition="{images}">
+				<f:for each="{images}" as="imageItem" iteration="imageIterator">
+					<f:if condition="{imageIterator.isFirst}">
+						<img class="card-img-top" src="{f:uri.image(image: imageItem)}" alt="{imageItem.alternative}">
+					</f:if>
+				</f:for>
+			</f:if>
+			<div class="card-body">
+				<f:if condition="{header}">
+					<h5 class="card-title">{header}</h5>
+				</f:if>
+				<f:if condition="{subheader}">
+					<h6 class="card-subtitle mb-2">{subheader}</h6>
+				</f:if>
+				<f:if condition="{bodytext}">
+					{bodytext -> f:format.html()}
+				</f:if>
+				<f:if condition="{header_link}">
+					<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
+				</f:if>
+			</div>
+		</div>
+	</f:section>
+</div>

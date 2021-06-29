@@ -1,0 +1,14 @@
+<div class="card">
+	<div class="card-header" id="heading-{data.uid}">
+		<h2 class="mb-0">
+			<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-{data.uid}" aria-expanded="true" aria-controls="collapse-{data.uid}">
+				{data.header}
+			</button>
+		</h2>
+	</div>
+	<div id="collapse-{data.uid}" class="collapse" aria-labelledby="heading-{data.uid}" data-parent="#accordion-{data.tx_gridelements_container}">
+		<div class="card-body">
+			{data.bodytext -> f:format.html()}
+		</div>
+	</div>
+</div>

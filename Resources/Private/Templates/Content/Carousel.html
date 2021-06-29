@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+		 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+
+	<f:layout name="Content"/>
+	<f:section name="Main">
+		<f:if condition="{images}">
+			<div id="carousel-{data.uid}" class="carousel slide" data-ride="carousel">
+				<f:if condition="{images -> f:count()} > 1">
+					<ol class="carousel-indicators">
+						<f:for each="{images}" as="imageItem" iteration="imageIterator">
+							<li data-target="#carousel-{data.uid}" data-slide-to="{imageIterator.index}"
+									class="{f:if(condition: '{imageIterator.isFirst}', then: 'active')}"></li>
+						</f:for>
+					</ol>
+				</f:if>
+				<div class="carousel-inner">
+					<f:for each="{images}" as="imageItem" iteration="imageIterator">
+						<div class="carousel-item {f:if(condition: '{imageIterator.isFirst}', then: 'active')}">
+							<img src="{f:uri.image(image: imageItem, height: '500c', width: '1100')}" class="d-block w-100"
+									 alt="{imageItem.alternative}">
+							<div class="carousel-caption d-none d-md-block">
+								<f:if condition="{imageItem.title}">
+									<h5>{imageItem.title}</h5>
+								</f:if>
+								<f:if condition="{imageItem.description}">
+									<p>{imageItem.description}</p>
+								</f:if>
+							</div>
+						</div>
+					</f:for>
+				</div>
+				<f:if condition="{images -> f:count()} > 1">
+					<a class="carousel-control-prev" href="#carousel-{data.uid}" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-{data.uid}" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</f:if>
+			</div>
+		</f:if>
+	</f:section>
+</div>

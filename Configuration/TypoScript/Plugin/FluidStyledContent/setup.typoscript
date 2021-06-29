@@ -1,0 +1,73 @@
+lib.contentElement {
+    layoutRootPaths.1 = EXT:contentelements/Resources/Private/Layouts/Content/
+    templateRootPaths.200 = EXT:contentelements/Resources/Private/Templates/Content/
+    partialRootPaths.1 = EXT:contentelements/Resources/Private/Partials/Content/
+}
+
+tt_content {
+
+    contentelements_card =< lib.contentElement
+    contentelements_card {
+        templateName = Card
+        dataProcessing {
+            1 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            1 {
+                references {
+                  table = tt_content
+                  fieldName = image
+                }
+                as = images
+            }
+        }
+    }
+
+    contentelements_carousel =< lib.contentElement
+    contentelements_carousel {
+        templateName = Carousel
+        dataProcessing {
+            1 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            1 {
+                references {
+                  table = tt_content
+                  fieldName = image
+                }
+                as = images
+            }
+        }
+    }
+
+    contentelements_responsive_image =< lib.contentElement
+    contentelements_responsive_image {
+        templateName = ResponsiveImage
+        dataProcessing {
+            1 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            1 {
+                references {
+                  table = tt_content
+                  fieldName = image
+                }
+                as = images
+            }
+        }
+    }
+
+    contentelements_logo_wall =< lib.contentElement
+    contentelements_logo_wall {
+        templateName = LogoWall
+        dataProcessing {
+            1 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            1 {
+                references {
+                  table = tt_content
+                  fieldName = image
+                }
+                as = images
+            }
+        }
+    }
+
+    contentelements_accordion_item =< lib.contentElement
+    contentelements_accordion_item {
+        templateName = AccordionItem
+    }
+}

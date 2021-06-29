@@ -176,4 +176,27 @@ tx_gridelements.setup {
         }
     }
 
+    accordion {
+        title = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:accordion.title
+        description = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:accordion.description
+        flexformDS = FILE:EXT:contentelements/Configuration/FlexForms/Gridelements.xml
+        config {
+            colCount = 1
+            rowCount = 1
+            rows {
+                1 {
+                    columns {
+                        100 {
+                            name = LLL:EXT:contentelements/Resources/Private/Language/locallang_gridelements.xlf:content
+                            colPos = 100
+                            allowed {
+                                CType = contentelements_accordion_item
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

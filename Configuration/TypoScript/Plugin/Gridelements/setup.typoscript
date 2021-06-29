@@ -62,4 +62,13 @@ tt_content.gridelements_pi1.20.10.setup {
             file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/25-75.html
         }
     }
+
+    //  accordion
+    accordion < lib.gridelements.defaultGridSetup
+    accordion {
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/Accordion.html
+        }
+    }
 }

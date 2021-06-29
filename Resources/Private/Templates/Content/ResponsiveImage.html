@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+	<f:if condition="{images.0.description}">
+		<f:then>
+			<f:render section="Figure"
+								arguments="{image: images.0, class: 'figure-img img-fluid', alternative: images.0.alternative, title: images.0.title, description: images.0.description, link: images.0.link}"/>
+		</f:then>
+		<f:else>
+			<f:render section="Image" arguments="{image: images.0, class: 'img-fluid', alternative: images.0.alternative, title: images.0.title, link: images.0.link}"/>
+		</f:else>
+	</f:if>
+</f:section>
+
+<f:section name="Figure">
+	<figure class="figure">
+		<f:render section="Image" arguments="{image: image, class: class, alternative: alternative, title: title, link: link}"/>
+		<figcaption class="figure-caption">{description}</figcaption>
+	</figure>
+
+</f:section>
+
+<f:section name="Image">
+	<div class="position-relative">
+		<img src="{f:uri.image(image: image)}" alt="{alternative}" class="{class}" title="{title}"/>
+		<f:if condition="{link}">
+			<a href="{f:uri.typolink(parameter: link)}" class="stretched-link"></a>
+		</f:if>
+	</div>
+</f:section>
+
+</html>
+

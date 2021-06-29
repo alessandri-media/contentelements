@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-07-06T11:25:08Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="content.element.accordion">
+				<source><![CDATA[Accordion]]></source>
+			</trans-unit>
+			<trans-unit id="content.element.card">
+				<source><![CDATA[Card]]></source>
+			</trans-unit>
+			<trans-unit id="content.element.carousel">
+				<source><![CDATA[Carousel]]></source>
+			</trans-unit>
+			<trans-unit id="content.element.logo_wall">
+				<source><![CDATA[Logo Wall]]></source>
+			</trans-unit>
+			<trans-unit id="content.element.responsive_image">
+				<source><![CDATA[Responsive Image]]></source>
+			</trans-unit>
+			<trans-unit id="content.element.accordion_item">
+				<source><![CDATA[Accordion item]]></source>
+			</trans-unit>
+			<trans-unit id="logo_wall">
+				<source><![CDATA[Logo Wall]]></source>
+			</trans-unit>
+			<trans-unit id="logo_wall.description">
+				<source><![CDATA[This element inserts a logo wall]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.accordion">
+				<source><![CDATA[Accordion]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.accordion.description">
+				<source><![CDATA[This element inserts a Bootstrap Accordion]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.card">
+				<source><![CDATA[Card]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.card.description">
+				<source><![CDATA[This element inserts a Bootstrap Card]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.carousel">
+				<source><![CDATA[Carousel]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.carousel.description">
+				<source><![CDATA[This element inserts a Bootstrap Carousel]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.contentelements.header">
+				<source><![CDATA[Bootstrap content elements]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.responsive_image">
+				<source><![CDATA[Responsive Image]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.responsive_image.description">
+				<source><![CDATA[This element inserts a Bootstrap Responsive Image]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.accordion_item">
+				<source><![CDATA[Accordion item]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.accordion_item.description">
+				<source><![CDATA[Use it with Gridelements accordion container!]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

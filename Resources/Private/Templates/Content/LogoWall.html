@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+	<div class="logo-wall container">
+		<div class="py-5">
+			<div class="row">
+				<f:for each="{images}" as="imageItem">
+					<div class="col-sm-6 col-lg-3 mb-3">
+						<div class="card shadow-sm overflow-hidden mb-3">
+							<div class="card-body p-5">
+								<f:if condition="{imageItem}">
+									<image src="{f:uri.image(image: imageItem)}" class="img-fluid"
+												 alt="{imageItem.alternative}"/>
+									<f:if condition="{imageItem.link}">
+										<a href="{f:uri.typolink(parameter: imageItem.link)}" target="_blank" class="stretched-link"></a>
+									</f:if>
+								</f:if>
+							</div>
+						</div>
+					</div>
+				</f:for>
+			</div>
+		</div>
+	</div>
+</f:section>
+</div>

@@ -62,6 +62,12 @@
 			<trans-unit id="wizard.accordion_item.description">
 				<source><![CDATA[Use it with Gridelements accordion container!]]></source>
 			</trans-unit>
+			<trans-unit id="wizard.logo_wall">
+				<source><![CDATA[Logo wall]]></source>
+			</trans-unit>
+			<trans-unit id="wizard.logo_wall.description">
+				<source><![CDATA[This element inserts a logo wall]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

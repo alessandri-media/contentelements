@@ -47,6 +47,12 @@
 			<trans-unit id="col-75-25.title">
 				<source><![CDATA[75% - 25%]]></source>
 			</trans-unit>
+			<trans-unit id="col-25-25-25-25.description">
+				<source><![CDATA[Four cols 25% - 25% - 25%]]></source>
+			</trans-unit>
+			<trans-unit id="col-25-25-25-25.title">
+				<source><![CDATA[25% - 25% - 25% - 25%]]></source>
+			</trans-unit>
 			<trans-unit id="accordion.description">
 				<source><![CDATA[Use it with with the accordion item content element]]></source>
 			</trans-unit>

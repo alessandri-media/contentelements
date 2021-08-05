@@ -63,6 +63,15 @@ tt_content.gridelements_pi1.20.10.setup {
         }
     }
 
+    //  25% - 25% - 25% - 25%
+    col-25-25-25-25 < lib.gridelements.defaultGridSetup
+    col-25-25-25-25 {
+        cObject = FLUIDTEMPLATE
+        cObject {
+          file = EXT:contentelements/Resources/Private/Templates/Extension/Gridelements/25-25-25-25.html
+        }
+    }
+
     //  accordion
     accordion < lib.gridelements.defaultGridSetup
     accordion {

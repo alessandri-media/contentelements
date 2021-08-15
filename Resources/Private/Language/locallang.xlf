@@ -5,6 +5,12 @@
 			<generator>LFEditor</generator>
 		</header>
 		<body>
+			<trans-unit id="tx_contentelements_card_flip_enable">
+				<source><![CDATA[Enable flip effect]]></source>
+			</trans-unit>
+			<trans-unit id="tx_contentelements_bodytext_card_back">
+				<source><![CDATA[Bodytext card back]]></source>
+			</trans-unit>
 			<trans-unit id="content.element.accordion">
 				<source><![CDATA[Accordion]]></source>
 			</trans-unit>

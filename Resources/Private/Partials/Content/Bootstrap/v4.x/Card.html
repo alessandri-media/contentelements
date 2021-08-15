@@ -3,12 +3,12 @@
 
 	<f:layout name="Content"/>
 
-	<f:section name="Main">
+	<f:section name="Card">
 		<div class="card shadow-sm">
 			<f:if condition="{images}">
 				<f:for each="{images}" as="imageItem" iteration="imageIterator">
 					<f:if condition="{imageIterator.isFirst}">
-						<img class="card-img-top" src="{f:uri.image(image: imageItem)}" alt="{imageItem.alternative}">
+						<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}" alt="{imageItem.alternative}">
 					</f:if>
 				</f:for>
 			</f:if>
@@ -26,6 +26,41 @@
 					<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
 				</f:if>
 			</div>
+		</div>
+	</f:section>
+
+	<f:section name="CardFlip">
+		<div class="card card-flip">
+			<div class="card-front shadow-sm">
+				<f:if condition="{images}">
+					<f:for each="{images}" as="imageItem" iteration="imageIterator">
+						<f:if condition="{imageIterator.isFirst}">
+							<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}" alt="{imageItem.alternative}">
+						</f:if>
+					</f:for>
+				</f:if>
+				<div class="card-body">
+					<f:if condition="{header}">
+						<h5 class="card-title">{header}</h5>
+					</f:if>
+					<f:if condition="{subheader}">
+						<h6 class="card-subtitle mb-2">{subheader}</h6>
+					</f:if>
+					<f:if condition="{bodytext}">
+						{bodytext -> f:format.html()}
+					</f:if>
+				</div>
+			</div>
+			<div class="card-back shadow-sm">
+				<div class="card-body">
+					<f:if condition="{tx_contentelements_bodytext}">
+						{tx_contentelements_bodytext -> f:format.html()}
+					</f:if>
+				</div>
+			</div>
+			<f:if condition="{header_link}">
+				<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
+			</f:if>
 		</div>
 	</f:section>
 </div>

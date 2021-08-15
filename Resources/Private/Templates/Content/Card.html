@@ -4,6 +4,24 @@
 	<f:layout name="Content"/>
 
 	<f:section name="Main">
-		<f:render partial="Bootstrap/v4.x/Card" section="Main" arguments="{header: '{data.header}', header_link: '{data.header_link}', subheader: '{data.subheader}', bodytext: '{data.bodytext}', images: '{images}'}"/>
+		<f:if condition="{data.tx_contentelements_card_flip_enable}">
+			<f:then>
+				<f:render partial="Bootstrap/v4.x/Card" section="CardFlip" arguments="{
+				header: '{data.header}',
+				header_link: '{data.header_link}',
+				subheader: '{data.subheader}',
+				bodytext: '{data.bodytext}',
+				tx_contentelements_bodytext: '{data.tx_contentelements_bodytext}',
+				images: '{images}'}"/>
+			</f:then>
+			<f:else>
+				<f:render partial="Bootstrap/v4.x/Card" section="Card" arguments="{
+				header: '{data.header}',
+				header_link: '{data.header_link}',
+				subheader: '{data.subheader}',
+				bodytext: '{data.bodytext}',
+				images: '{images}'}"/>
+			</f:else>
+		</f:if>
 	</f:section>
 </div>

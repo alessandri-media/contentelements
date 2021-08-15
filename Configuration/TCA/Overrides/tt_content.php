@@ -1,5 +1,51 @@
 <?php
 
+$additionalColumns = [
+    'tx_contentelements_card_header' => [
+        'exclude'   => 1,
+        'label'     => 'LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_card_header',
+        'l10n_mode' => 'prefixLangTitle',
+        'config'    => [
+            'type' => 'input',
+            'size' => 50,
+            'max'  => 255,
+        ],
+    ],
+    'tx_contentelements_card_footer' => [
+        'exclude'   => 1,
+        'label'     => 'LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_card_footer',
+        'l10n_mode' => 'prefixLangTitle',
+        'config'    => [
+            'type' => 'input',
+            'size' => 50,
+            'max'  => 255,
+        ],
+    ],
+    'tx_contentelements_card_flip_enable' => [
+        'exclude' => 1,
+        'label'   => 'LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_card_flip_enable',
+        'onChange' => 'reload',
+        'config'  => [
+            'type'    => 'check',
+            'renderType' => 'checkboxToggle',
+            'items' => [
+                [
+                    0                    => '',
+                    1                    => 1
+                ],
+            ],
+        ],
+    ],
+    'tx_contentelements_bodytext'         => [
+        'exclude' => 1,
+        'label'   => 'LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_bodytext',
+        'l10n_mode' => 'prefixLangTitle',
+        'config'  => $GLOBALS['TCA']['tt_content']['columns']['bodytext']['config'],
+    ],
+];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $additionalColumns);
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
@@ -68,6 +114,8 @@ $GLOBALS['TCA']['tt_content']['types']['contentelements_card'] = [
             subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
             image;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_formlabel,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            tx_contentelements_card_flip_enable;LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_card_flip_enable,
+            tx_contentelements_bodytext;LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_bodytext_card_back,
             header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link,
          --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
@@ -80,6 +128,13 @@ $GLOBALS['TCA']['tt_content']['types']['contentelements_card'] = [
             ],
         ],
         'bodytext' => [
+            'config' => [
+                'enableRichtext'        => true,
+                'richtextConfiguration' => 'default',
+            ],
+        ],
+        'tx_contentelements_bodytext' => [
+            'displayCond' => 'FIELD:tx_contentelements_card_flip_enable:=:1',
             'config' => [
                 'enableRichtext'        => true,
                 'richtextConfiguration' => 'default',

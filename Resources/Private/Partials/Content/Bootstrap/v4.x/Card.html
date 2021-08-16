@@ -5,6 +5,9 @@
 
 	<f:section name="Card">
 		<div class="card shadow-sm">
+			<f:if condition="{tx_contentelements_card_header}">
+				<div class="card-header">{tx_contentelements_card_header}</div>
+			</f:if>
 			<f:if condition="{images}">
 				<f:for each="{images}" as="imageItem" iteration="imageIterator">
 					<f:if condition="{imageIterator.isFirst}">
@@ -26,12 +29,18 @@
 					<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
 				</f:if>
 			</div>
+			<f:if condition="{tx_contentelements_card_footer}">
+				<div class="card-footer">{tx_contentelements_card_footer}</div>
+			</f:if>
 		</div>
 	</f:section>
 
 	<f:section name="CardFlip">
 		<div class="card card-flip">
 			<div class="card-front shadow-sm">
+				<f:if condition="{tx_contentelements_card_header}">
+					<div class="card-header">{tx_contentelements_card_header}</div>
+				</f:if>
 				<f:if condition="{images}">
 					<f:for each="{images}" as="imageItem" iteration="imageIterator">
 						<f:if condition="{imageIterator.isFirst}">
@@ -50,6 +59,9 @@
 						{bodytext -> f:format.html()}
 					</f:if>
 				</div>
+				<f:if condition="{tx_contentelements_card_footer}">
+					<div class="card-footer">{tx_contentelements_card_footer}</div>
+				</f:if>
 			</div>
 			<div class="card-back shadow-sm">
 				<div class="card-body">

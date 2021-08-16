@@ -11,6 +11,12 @@
 			<trans-unit id="tx_contentelements_bodytext_card_back">
 				<source><![CDATA[Bodytext card back]]></source>
 			</trans-unit>
+			<trans-unit id="tx_contentelements_card_header">
+				<source><![CDATA[Card header]]></source>
+			</trans-unit>
+			<trans-unit id="tx_contentelements_card_footer">
+				<source><![CDATA[Card footer]]></source>
+			</trans-unit>
 			<trans-unit id="content.element.accordion">
 				<source><![CDATA[Accordion]]></source>
 			</trans-unit>

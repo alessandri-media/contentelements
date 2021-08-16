@@ -112,10 +112,12 @@ $GLOBALS['TCA']['tt_content']['types']['contentelements_card'] = [
             --palette--;;general,
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
             subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
+            tx_contentelements_card_header,
             image;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:image_formlabel,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
             tx_contentelements_card_flip_enable;LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_card_flip_enable,
             tx_contentelements_bodytext;LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:tx_contentelements_bodytext_card_back,
+            tx_contentelements_card_footer,
             header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link,
          --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
             --palette--;;hidden,
@@ -129,15 +131,13 @@ $GLOBALS['TCA']['tt_content']['types']['contentelements_card'] = [
         ],
         'bodytext' => [
             'config' => [
-                'enableRichtext'        => true,
-                'richtextConfiguration' => 'default',
+                'enableRichtext'        => true
             ],
         ],
         'tx_contentelements_bodytext' => [
             'displayCond' => 'FIELD:tx_contentelements_card_flip_enable:=:1',
             'config' => [
-                'enableRichtext'        => true,
-                'richtextConfiguration' => 'default',
+                'enableRichtext'        => true
             ],
         ],
     ],
@@ -199,8 +199,7 @@ $GLOBALS['TCA']['tt_content']['types']['contentelements_accordion_item'] = [
     'columnsOverrides' => [
         'bodytext' => [
             'config' => [
-                'enableRichtext'        => true,
-                'richtextConfiguration' => 'default',
+                'enableRichtext'        => true
             ],
         ],
     ],

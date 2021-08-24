@@ -1,7 +1,7 @@
 lib.contentElement {
-    layoutRootPaths.1 = EXT:contentelements/Resources/Private/Layouts/Content/
+    layoutRootPaths.200 = EXT:contentelements/Resources/Private/Layouts/Content/
     templateRootPaths.200 = EXT:contentelements/Resources/Private/Templates/Content/
-    partialRootPaths.1 = EXT:contentelements/Resources/Private/Partials/Content/
+    partialRootPaths.200 = EXT:contentelements/Resources/Private/Partials/Content/
 }
 
 tt_content {

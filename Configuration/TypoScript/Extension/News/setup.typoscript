@@ -1,0 +1,14 @@
+plugin.tx_news {
+  view {
+    templateRootPaths {
+      200 = EXT:contentelements/Resources/Private/Templates/Extension/
+    }
+    partialRootPaths {
+      200 = EXT:contentelements/Resources/Private/Partials/
+      201 = EXT:contentelements/Resources/Private/Templates/Extension/News/Partials/
+    }
+    layoutRootPaths {
+      200 = EXT:contentelements/Resources/Private/Templates/Extension/News/Layouts/
+    }
+  }
+}

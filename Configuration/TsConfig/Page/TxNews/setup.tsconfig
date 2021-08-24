@@ -1,4 +1,5 @@
 tx_news.templateLayouts {
+    100 = Bootstrap Grid
     101 = Bootstrap Card Group
-    102 = Bootstrap Card as List
+    102 = Bootstrap Card Deck
 }

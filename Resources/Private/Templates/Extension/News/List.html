@@ -9,14 +9,14 @@
 
 <f:section name="content">
 	<f:switch expression="{settings.templateLayout}">
-		<f:case value="101">
+		<f:case value="100">
 			<f:if condition="{news}">
 				<f:then>
 					<div class="row">
 						<f:for each="{news}" as="newsItem" iteration="iterator">
 							<div class="col-lg-6">
 								<f:render partial="Content/Bootstrap/v4.x/Card" section="Card" arguments="{
-						class: '',
+						class: 'h-100',
 						header: '{newsItem.title}',
 						header_link: '{settings.detailPid}',
 						header_link_additional_params: '&tx_news_pi1[action]=detail&&tx_news_pi1[controller]=News&&tx_news_pi1[news]={newsItem.uid}',
@@ -26,6 +26,48 @@
 								/>
 							</div>
 						</f:for>
+					</div>
+				</f:then>
+			</f:if>
+		</f:case>
+		<f:case value="101">
+			<f:if condition="{news}">
+				<f:then>
+					<div class="row">
+						<div class="card-group">
+							<f:for each="{news}" as="newsItem" iteration="iterator">
+									<f:render partial="Content/Bootstrap/v4.x/Card" section="Card" arguments="{
+							class: '',
+							header: '{newsItem.title}',
+							header_link: '{settings.detailPid}',
+							header_link_additional_params: '&tx_news_pi1[action]=detail&&tx_news_pi1[controller]=News&&tx_news_pi1[news]={newsItem.uid}',
+							subheader: '{newsItem.datetime -> f:format.date(format: \'d.m.Y\')}',
+							bodytext: '{f:if(condition: \'{newsItem.teaser}\', then: \'{newsItem.teaser -> f:format.crop(maxCharacters: \\\'{settings.cropMaxCharacters}\\\')}\', else: \'{newsItem.bodytext -> f:format.crop(maxCharacters: \\\'{settings.cropMaxCharacters}\\\')}\')}',
+							images: '{newsItem.falMedia}'}"
+									/>
+							</f:for>
+							</div>
+					</div>
+				</f:then>
+			</f:if>
+		</f:case>
+		<f:case value="102">
+			<f:if condition="{news}">
+				<f:then>
+					<div class="row">
+						<div class="card-deck">
+							<f:for each="{news}" as="newsItem" iteration="iterator">
+									<f:render partial="Content/Bootstrap/v4.x/Card" section="Card" arguments="{
+							class: '',
+							header: '{newsItem.title}',
+							header_link: '{settings.detailPid}',
+							header_link_additional_params: '&tx_news_pi1[action]=detail&&tx_news_pi1[controller]=News&&tx_news_pi1[news]={newsItem.uid}',
+							subheader: '{newsItem.datetime -> f:format.date(format: \'d.m.Y\')}',
+							bodytext: '{f:if(condition: \'{newsItem.teaser}\', then: \'{newsItem.teaser -> f:format.crop(maxCharacters: \\\'{settings.cropMaxCharacters}\\\')}\', else: \'{newsItem.bodytext -> f:format.crop(maxCharacters: \\\'{settings.cropMaxCharacters}\\\')}\')}',
+							images: '{newsItem.falMedia}'}"
+									/>
+							</f:for>
+							</div>
 					</div>
 				</f:then>
 			</f:if>

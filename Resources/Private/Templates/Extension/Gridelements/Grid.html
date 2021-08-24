@@ -1,0 +1,94 @@
+<f:if condition="{data.flexform_gridRendering}">
+	<f:then>
+		<f:render section="card" arguments="{_all}"/>
+	</f:then>
+	<f:else>
+		<f:render section="{data.tx_gridelements_backend_layout}" arguments="{_all}"/>
+	</f:else>
+</f:if>
+
+<f:section name="card">
+	<div class="{data.flexform_gridRendering}">
+		<f:for each="{data.tx_gridelements_view_columns}" as="columnItem">
+			{columnItem->f:format.raw()}
+		</f:for>
+	</div>
+</f:section>
+
+<f:section name="col-25-75">
+	<div class="row">
+		<div class="col-lg-3">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-9">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+
+<f:section name="col-33-33-33">
+	<div class="row">
+		<div class="col-lg-4">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-4">
+			{data.tx_gridelements_view_column_100->f:format.raw()}
+		</div>
+		<div class="col-lg-4">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+<f:section name="col-33-66">
+	<div class="row">
+		<div class="col-lg-4">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-8">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+<f:section name="col-50-50">
+	<div class="row">
+		<div class="col-lg-6">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-6">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+<f:section name="col-66-33">
+	<div class="row">
+		<div class="col-lg-8">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-4">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+<f:section name="col-75-25">
+	<div class="row">
+		<div class="col-lg-9">
+			{data.tx_gridelements_view_column_101->f:format.raw()}
+		</div>
+		<div class="col-lg-3">
+			{data.tx_gridelements_view_column_102->f:format.raw()}
+		</div>
+	</div>
+</f:section>
+
+<f:section name="col-100">
+	<div class="row">
+		<div class="col-12">
+			{data.tx_gridelements_view_column_100->f:format.raw()}
+		</div>
+	</div>
+</f:section>

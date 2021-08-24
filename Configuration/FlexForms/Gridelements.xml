@@ -6,6 +6,30 @@
     <ROOT type="array">
         <type>array</type>
         <el type="array">
+            <gridRendering>
+                <TCEforms type="array">
+                    <label>Rendering</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <default></default>
+                        <items type="array">
+                            <numIndex index="0" type="array">
+                                <numIndex index="0">Default</numIndex>
+                                <numIndex index="1"></numIndex>
+                            </numIndex>
+                            <numIndex index="10" type="array">
+                                <numIndex index="0">Card Deck</numIndex>
+                                <numIndex index="1">card-deck</numIndex>
+                            </numIndex>
+                            <numIndex index="11" type="array">
+                                <numIndex index="0">Card Group</numIndex>
+                                <numIndex index="1">card-group</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </gridRendering>
         </el>
     </ROOT>
 </T3DataStructure>

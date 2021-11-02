@@ -1,3 +1,2 @@
 @import 'EXT:contentelements/Configuration/TypoScript/Extension/FluidStyledContent/'
-@import 'EXT:contentelements/Configuration/TypoScript/Extension/Gridelements/'
 @import 'EXT:contentelements/Configuration/TypoScript/Extension/News/'

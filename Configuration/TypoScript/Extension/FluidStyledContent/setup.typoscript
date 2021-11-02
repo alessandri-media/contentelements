@@ -70,4 +70,53 @@ tt_content {
     contentelements_accordion_item {
         templateName = AccordionItem
     }
+
+    container_grid_100 =< lib.contentElement
+    container_grid_100 {
+      templateName = 100
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_50_50 =< lib.contentElement
+    container_grid_50_50 {
+      templateName = 50-50
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_25_75 =< lib.contentElement
+    container_grid_25_75 {
+      templateName = 25-75
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_75_25 =< lib.contentElement
+    container_grid_75_25 {
+      templateName = 75-25
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_33_66 =< lib.contentElement
+    container_grid_33_66 {
+      templateName = 33-66
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_66_33 =< lib.contentElement
+    container_grid_66_33 {
+      templateName = 66-33
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_33_33_33 =< lib.contentElement
+    container_grid_33_33_33 {
+      templateName = 33-33-33
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
+    container_grid_25_25_25_25 =< lib.contentElement
+    container_grid_25_25_25_25 {
+      templateName = 25-25-25-25
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
 }

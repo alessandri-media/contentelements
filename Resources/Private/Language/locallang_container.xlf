@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-02-11T13:00:08Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="col-100.description">
+				<source><![CDATA[One col 100%]]></source>
+			</trans-unit>
+			<trans-unit id="col-100.title">
+				<source><![CDATA[100%]]></source>
+			</trans-unit>
+			<trans-unit id="col-25-75.description">
+				<source><![CDATA[Two cols 25% - 75%]]></source>
+			</trans-unit>
+			<trans-unit id="col-25-75.title">
+				<source><![CDATA[25% - 75%]]></source>
+			</trans-unit>
+			<trans-unit id="col-33-33-33.description">
+				<source><![CDATA[Three cols 33% - 33% - 33%]]></source>
+			</trans-unit>
+			<trans-unit id="col-33-33-33.title">
+				<source><![CDATA[33% - 33% - 33%]]></source>
+			</trans-unit>
+			<trans-unit id="col-33-66.description">
+				<source><![CDATA[Two cols 33% - 66%]]></source>
+			</trans-unit>
+			<trans-unit id="col-33-66.title">
+				<source><![CDATA[33% - 66%]]></source>
+			</trans-unit>
+			<trans-unit id="col-50-50.description">
+				<source><![CDATA[Two cols 50% - 50%]]></source>
+			</trans-unit>
+			<trans-unit id="col-50-50.title">
+				<source><![CDATA[50% - 50%]]></source>
+			</trans-unit>
+			<trans-unit id="col-66-33.description">
+				<source><![CDATA[Two cols 66% - 33%]]></source>
+			</trans-unit>
+			<trans-unit id="col-66-33.title">
+				<source><![CDATA[66% - 33%]]></source>
+			</trans-unit>
+			<trans-unit id="col-75-25.description">
+				<source><![CDATA[Two cols 75% - 25%]]></source>
+			</trans-unit>
+			<trans-unit id="col-75-25.title">
+				<source><![CDATA[75% - 25%]]></source>
+			</trans-unit>
+			<trans-unit id="col-25-25-25-25.description">
+				<source><![CDATA[Four cols 25% - 25% - 25%]]></source>
+			</trans-unit>
+			<trans-unit id="col-25-25-25-25.title">
+				<source><![CDATA[25% - 25% - 25% - 25%]]></source>
+			</trans-unit>
+			<trans-unit id="accordion.description">
+				<source><![CDATA[Use it with with the accordion item content element]]></source>
+			</trans-unit>
+			<trans-unit id="accordion.title">
+				<source><![CDATA[Accordion container]]></source>
+			</trans-unit>
+			<trans-unit id="content.left">
+				<source><![CDATA[Content left]]></source>
+			</trans-unit>
+			<trans-unit id="content.main">
+				<source><![CDATA[Content]]></source>
+			</trans-unit>
+			<trans-unit id="content.right">
+				<source><![CDATA[Content right]]></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

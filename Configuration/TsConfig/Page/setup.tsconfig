@@ -1,3 +1,2 @@
 @import 'EXT:contentelements/Configuration/TsConfig/Page/Mod/Wizards/NewContentElement/WizardItems/setup.tsconfig'
-@import 'EXT:contentelements/Configuration/TsConfig/Page/TxGridelements/setup.tsconfig'
 @import 'EXT:contentelements/Configuration/TsConfig/Page/TxNews/setup.tsconfig'

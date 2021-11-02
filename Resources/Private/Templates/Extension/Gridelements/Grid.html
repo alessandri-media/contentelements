@@ -9,8 +9,25 @@
 
 <f:section name="card">
 	<div class="{data.flexform_gridRendering}">
-		<f:for each="{data.tx_gridelements_view_columns}" as="columnItem">
+		<f:for each="{data.tx_gridelements_view_columns}" as="columnItem" iteration="columnIterator">
 			{columnItem->f:format.raw()}
+			<f:if condition="{data.flexform_gridRendering} == 'card-deck'">
+
+				<f:if condition="{data.flexform_disableResponsive}">
+					<f:then></f:then>
+					<f:else>
+						<f:if condition="{columnIterator.isEven}">
+							<div class="w-100 d-none d-sm-block d-lg-none"></div>
+						</f:if>
+						<f:if condition="{columnIterator.cycle} % 4">
+							<f:then></f:then>
+							<f:else>
+								<div class="w-100 d-none d-lg-block d-xl-none"></div>
+							</f:else>
+						</f:if>
+					</f:else>
+				</f:if>
+			</f:if>
 		</f:for>
 	</div>
 </f:section>

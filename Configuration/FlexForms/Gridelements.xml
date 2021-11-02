@@ -9,6 +9,7 @@
             <gridRendering>
                 <TCEforms type="array">
                     <label>Rendering</label>
+                    <onChange>reload</onChange>
                     <config>
                         <type>select</type>
                         <renderType>selectSingle</renderType>
@@ -30,6 +31,15 @@
                     </config>
                 </TCEforms>
             </gridRendering>
+            <disableResponsive>
+                <TCEforms type="array">
+                    <label>Disable responsive</label>
+                    <displayCond>FIELD:gridRendering:=:card-deck</displayCond>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </disableResponsive>
         </el>
     </ROOT>
 </T3DataStructure>

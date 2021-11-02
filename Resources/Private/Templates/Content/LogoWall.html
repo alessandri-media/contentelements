@@ -9,8 +9,8 @@
 						<div class="card shadow-sm overflow-hidden mb-3">
 							<div class="card-body p-5">
 								<f:if condition="{imageItem}">
-									<image src="{f:uri.image(image: imageItem)}" class="img-fluid"
-												 alt="{imageItem.alternative}"/>
+									<image src="{f:uri.image(image: imageItem)}" class="img-fluid" alt="{imageItem.alternative}"
+												 loading="{settings.media.lazyLoading}"/>
 									<f:if condition="{imageItem.link}">
 										<a href="{f:uri.typolink(parameter: imageItem.link)}" target="_blank" class="stretched-link"></a>
 									</f:if>

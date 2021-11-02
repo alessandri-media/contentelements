@@ -17,7 +17,7 @@
 					<f:for each="{images}" as="imageItem" iteration="imageIterator">
 						<div class="carousel-item {f:if(condition: '{imageIterator.isFirst}', then: 'active')}">
 							<img src="{f:uri.image(image: imageItem, height: '500c', width: '1100')}" class="d-block w-100"
-									 alt="{imageItem.alternative}">
+									 alt="{imageItem.alternative}" loading="{settings.media.lazyLoading}">
 							<div class="carousel-caption d-none d-md-block">
 								<f:if condition="{imageItem.title}">
 									<h5>{imageItem.title}</h5>

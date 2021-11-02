@@ -11,7 +11,8 @@
 			<f:if condition="{images}">
 				<f:for each="{images}" as="imageItem" iteration="imageIterator">
 					<f:if condition="{imageIterator.isFirst}">
-						<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}" alt="{imageItem.alternative}">
+						<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}"
+								 alt="{imageItem.alternative}" loading="{settings.media.lazyLoading}">
 					</f:if>
 				</f:for>
 			</f:if>
@@ -44,7 +45,8 @@
 				<f:if condition="{images}">
 					<f:for each="{images}" as="imageItem" iteration="imageIterator">
 						<f:if condition="{imageIterator.isFirst}">
-							<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}" alt="{imageItem.alternative}">
+							<img class="card-img-top" src="{f:uri.image(image: imageItem, cropVariant: 'default')}"
+									 alt="{imageItem.alternative}" loading="{settings.media.lazyLoading}">
 						</f:if>
 					</f:for>
 				</f:if>

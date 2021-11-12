@@ -66,6 +66,12 @@ tt_content {
         }
     }
 
+    container_accordion =< lib.contentElement
+    container_accordion {
+      templateName = Accordion
+      dataProcessing.21 = B13\Container\DataProcessing\ContainerProcessor
+    }
+
     contentelements_accordion_item =< lib.contentElement
     contentelements_accordion_item {
         templateName = AccordionItem

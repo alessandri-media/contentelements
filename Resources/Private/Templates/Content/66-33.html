@@ -1,20 +1,18 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
 		 xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
 
-	<f:layout name="Content"/>
+	<f:layout name="Grid"/>
 
 	<f:section name="Main">
-		<div class="row">
-			<div class="col-lg-8">
-				<f:for each="{children_101}" as="childItem">
-					{childItem.renderedContent -> f:format.raw()}
-				</f:for>
-			</div>
-			<div class="col-lg-4">
-				<f:for each="{children_102}" as="childItem">
-					{childItem.renderedContent -> f:format.raw()}
-				</f:for>
-			</div>
+		<div class="col-lg-8">
+			<f:for each="{children_101}" as="childItem">
+				{childItem.renderedContent -> f:format.raw()}
+			</f:for>
+		</div>
+		<div class="col-lg-4">
+			<f:for each="{children_102}" as="childItem">
+				{childItem.renderedContent -> f:format.raw()}
+			</f:for>
 		</div>
 	</f:section>
 </div>

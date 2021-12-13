@@ -14,7 +14,10 @@
 				tx_contentelements_bodytext: '{data.tx_contentelements_bodytext}',
 				tx_contentelements_card_header: '{data.tx_contentelements_card_header}',
 				tx_contentelements_card_footer: '{data.tx_contentelements_card_footer}',
-				images: '{images}'}"/>
+				images: '{images}',
+				class: '{data.tx_contentelements_background_color}',
+				imageOverlay: '{data.tx_contentelements_card_image_overlay}',
+				animation: '{data.tx_contentelements_animation}'}"/>
 			</f:then>
 			<f:else>
 				<f:render partial="Bootstrap/v4.x/Card" section="Card" arguments="{
@@ -24,7 +27,10 @@
 				bodytext: '{data.bodytext}',
 				tx_contentelements_card_header: '{data.tx_contentelements_card_header}',
 				tx_contentelements_card_footer: '{data.tx_contentelements_card_footer}',
-				images: '{images}'}"/>
+				images: '{images}',
+				class: '{data.tx_contentelements_background_color}',
+				imageOverlay: '{data.tx_contentelements_card_image_overlay}',
+				animation: '{data.tx_contentelements_animation}'}"/>
 			</f:else>
 		</f:if>
 	</f:section>

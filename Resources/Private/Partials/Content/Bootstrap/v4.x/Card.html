@@ -4,7 +4,7 @@
 	<f:layout name="Content"/>
 
 	<f:section name="Card">
-		<div class="card shadow-sm {class}">
+		<div class="card {class} {f:if(condition: animation, then: 'animate__animated')}" data-animation="{f:if(condition: animation, then: animation)}">
 			<f:if condition="{tx_contentelements_card_header}">
 				<div class="card-header">{tx_contentelements_card_header}</div>
 			</f:if>
@@ -16,29 +16,31 @@
 					</f:if>
 				</f:for>
 			</f:if>
-			<div class="card-body">
-				<f:if condition="{header}">
-					<h5 class="card-title">{header}</h5>
-				</f:if>
-				<f:if condition="{subheader}">
-					<h6 class="card-subtitle mb-2">{subheader}</h6>
-				</f:if>
-				<f:if condition="{bodytext}">
-					{bodytext -> f:format.html()}
-				</f:if>
-				<f:if condition="{header_link}">
-					<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
+			<div class="card-body {f:if(condition: imageOverlay, then: 'card-img-overlay')}">
+				<div class="card-body-wrapper">
+					<f:if condition="{header}">
+						<h5 class="card-title">{header}</h5>
+					</f:if>
+					<f:if condition="{subheader}">
+						<h6 class="card-subtitle mb-2">{subheader}</h6>
+					</f:if>
+					<f:if condition="{bodytext}">
+						{bodytext -> f:format.html()}
+					</f:if>
+					<f:if condition="{header_link}">
+						<a href="{f:uri.typolink(parameter: header_link, additionalParams: header_link_additional_params)}" class="stretched-link"></a>
+					</f:if>
+				</div>
+				<f:if condition="{tx_contentelements_card_footer}">
+					<div class="card-footer">{tx_contentelements_card_footer}</div>
 				</f:if>
 			</div>
-			<f:if condition="{tx_contentelements_card_footer}">
-				<div class="card-footer">{tx_contentelements_card_footer}</div>
-			</f:if>
 		</div>
 	</f:section>
 
 	<f:section name="CardFlip">
-		<div class="card card-flip {class}">
-			<div class="card-front shadow-sm">
+		<div class="card card-flip {class} {f:if(condition: animation, then: 'animate__animated')}" data-animation="{f:if(condition: animation, then: animation)}">
+			<div class="card-front">
 				<f:if condition="{tx_contentelements_card_header}">
 					<div class="card-header">{tx_contentelements_card_header}</div>
 				</f:if>
@@ -50,26 +52,30 @@
 						</f:if>
 					</f:for>
 				</f:if>
-				<div class="card-body">
-					<f:if condition="{header}">
-						<h5 class="card-title">{header}</h5>
-					</f:if>
-					<f:if condition="{subheader}">
-						<h6 class="card-subtitle mb-2">{subheader}</h6>
-					</f:if>
-					<f:if condition="{bodytext}">
-						{bodytext -> f:format.html()}
-					</f:if>
+				<div class="card-body {f:if(condition: imageOverlay, then: 'card-img-overlay')}">
+					<div class="card-body-wrapper">
+						<f:if condition="{header}">
+							<h5 class="card-title">{header}</h5>
+						</f:if>
+						<f:if condition="{subheader}">
+							<h6 class="card-subtitle mb-2">{subheader}</h6>
+						</f:if>
+						<f:if condition="{bodytext}">
+							{bodytext -> f:format.html()}
+						</f:if>
+					</div>
 				</div>
 				<f:if condition="{tx_contentelements_card_footer}">
 					<div class="card-footer">{tx_contentelements_card_footer}</div>
 				</f:if>
 			</div>
-			<div class="card-back shadow-sm">
+			<div class="card-back">
 				<div class="card-body">
-					<f:if condition="{tx_contentelements_bodytext}">
-						{tx_contentelements_bodytext -> f:format.html()}
-					</f:if>
+					<div class="card-body-wrapper">
+						<f:if condition="{tx_contentelements_bodytext}">
+							{tx_contentelements_bodytext -> f:format.html()}
+						</f:if>
+					</div>
 				</div>
 			</div>
 			<f:if condition="{header_link}">

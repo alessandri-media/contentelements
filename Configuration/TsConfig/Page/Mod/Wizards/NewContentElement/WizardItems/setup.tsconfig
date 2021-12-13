@@ -3,40 +3,40 @@ mod.wizards.newContentElement.wizardItems {
       elements {
         contentelements_card {
             iconIdentifier = content-text
-            title = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.card
-            description = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.card.description
+            title = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.card
+            description = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.card.description
             tt_content_defValues {
                CType = contentelements_card
             }
          }
          contentelements_carousel {
             iconIdentifier = content-text
-            title = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.carousel
-            description = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.carousel.description
+            title = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.carousel
+            description = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.carousel.description
             tt_content_defValues {
                CType = contentelements_carousel
             }
          }
          contentelements_responsive_image {
             iconIdentifier = content-image
-            title = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.responsive_image
-            description = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.responsive_image.description
+            title = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.responsive_image
+            description = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.responsive_image.description
             tt_content_defValues {
                CType = contentelements_responsive_image
             }
          }
          contentelements_logo_wall {
             iconIdentifier = content-image
-            title = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.logo_wall
-            description = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.logo_wall.description
+            title = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.logo_wall
+            description = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.logo_wall.description
             tt_content_defValues {
                CType = contentelements_logo_wall
             }
          }
          contentelements_accordion_item {
             iconIdentifier = content-text
-            title = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.accordion_item
-            description = LLL:EXT:contentelements/Resources/Private/Language/locallang.xlf:wizard.accordion_item.description
+            title = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.accordion_item
+            description = LLL:EXT:contentelements/Resources/Private/Language/locallang_db.xlf:wizard.accordion_item.description
             tt_content_defValues {
                CType = contentelements_accordion_item
             }
